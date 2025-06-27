@@ -1,0 +1,64 @@
+[
+    {
+        "label": "Home",
+        "href": "/"
+    },
+    {
+        "label": "About",
+        "href": "/about"
+    },
+    {
+        "label": "Services",
+        "href": "/services",
+        "dropdown": [
+            {
+                "label": "Web Development",
+                "href": "/services/web-development"
+            },
+            {
+                "label": "App Development", 
+                "href": "/services/app-development"
+            },
+            {
+                "label": "Web Design",
+                "href": "/services/web-design"
+            },
+            {
+                "label": "SEO",
+                "href": "/services/seo"
+            },
+            {
+                "label": "Digital Marketing",
+                "href": "/services/digital-marketing"
+            },
+            {
+                "label": "Graphic Design",
+                "href": "/services/graphic-design"
+            },
+            {
+                "label": "Video Editing",
+                "href": "/services/video-editing"
+            },
+            {
+                "label": "Social Media Marketing",
+                "href": "/services/social-media-marketing"
+            }
+        ]
+    },
+    {
+        "label": "Projects",
+        "href": "/projects"
+    },
+    {
+        "label": "Blog",
+        "href": "/blog"
+    },
+    {
+        "label": "Our Pricing",
+        "href": "/pricing"
+    },
+    {
+        "label": "Contact",
+        "href": "/contact"
+    }
+]
