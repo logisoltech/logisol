@@ -36,6 +36,7 @@ const Work = () => {
     const isTouch = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0)
 
     return (
+        <div className='w-full mx-auto bg-white relative z-20'>
         <section className={`${font.className} relative z-20 max-w-7xl mx-auto px-4 py-16`}>
             <div className="flex flex-col md:flex-row gap-10 items-start">
                 {/* Left: Text and Circle Arrow */}
@@ -94,6 +95,7 @@ const Work = () => {
                 </div>
             </div>
         </section>
+        </div>
     )
 }
 

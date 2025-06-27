@@ -4,7 +4,8 @@ import { font } from '../Font/font'
 
 const Facts = () => {
   return (
-    <section className={`${font.className} relative z-20 max-w-7xl mx-auto px-4 py-12`}>
+    <div className='w-full mx-auto bg-white relative z-20'>
+    <section className={`${font.className} bg-white relative z-20 max-w-7xl mx-auto px-4 py-12`}>
       <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-lg bg-white">
         {/* Left: Image */}
         <div className="flex-1 min-w-[260px] bg-gray-100">
@@ -62,6 +63,7 @@ const Facts = () => {
         </div>
       </div>
     </section>
+    </div>
   )
 }
 

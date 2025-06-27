@@ -1,5 +1,4 @@
 import Blog from "./Components/UI/Blog";
-import Footer from "./Components/UI/Footer";
 import Hero from "./Components/UI/Hero";
 import Navbar from "./Components/UI/Navbar";
 import Pricing from "./Components/UI/Pricing";
@@ -21,16 +20,16 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <Silder/>
+      <AboutUs/>
       <Services/>
+      <Facts/>
       <WhyChooseUs/>
       <Solution/>
-      <Pricing/>
-      <Blog/>
-      <AboutUs/>
-      <Facts/>
       <Work/>
-      <Testimonials/>
+      <Pricing/>
       <FAQs/>
+      <Blog/>
+      <Testimonials/>
       <Collaborate/>
       <Footer/>
     </div>
