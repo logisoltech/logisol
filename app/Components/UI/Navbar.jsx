@@ -68,7 +68,7 @@ const Navbar = () => {
 
         {/* Desktop CTA Button */}
         <div className="hidden lg:block">
-          <button className="custom-blue hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
+          <button className="bg-gradient-to-r from-[#283A64] via-sky-800 to-cyan-600 text-white px-6 py-2 rounded-full transition-colors duration-200 font-medium">
             Get a Quote
           </button>
         </div>

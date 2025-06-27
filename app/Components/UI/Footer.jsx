@@ -4,41 +4,26 @@ import { font } from '../Font/font'
 
 const Footer = () => {
   return (
-    <footer className={`${font.className} bg-white pt-12 z-50 relative pb-4 px-4 border-t border-gray-200`}> 
+    <footer className={`${font.className} bg-white pt-12 z-20 relative pb-4 px-4 border-t border-gray-200`}> 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Left Section */}
         <div className="col-span-1 flex flex-col justify-start">
-          <h2 className="text-4xl font-semibold text-gray-900 mb-2">Let's achieve <span className="text-cyan-400">excellence</span></h2>
-          <p className="text-cyan-400 font-semibold mt-6 mb-2 text-lg">Subscribe to our newsletter</p>
+          <h2 className="text-4xl font-semibold text-gray-900 mb-2">Let's achieve <span className="text-[#283A64]">excellence</span></h2>
+          <p className="text-[#283A64] font-semibold mt-6 mb-2 text-lg">Subscribe to our newsletter</p>
           <form className="flex items-center mb-4">
             <input
               type="email"
               placeholder="Enter Your Email"
               className="rounded-full border border-gray-300 px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-cyan-300"
             />
-            <button type="submit" className="-ml-8 z-10 bg-cyan-300 rounded-full w-12 h-12 flex items-center justify-center hover:bg-cyan-400 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-gray-800">
+            <button type="submit" className="-ml-8 z-10 bg-[#283A64] rounded-full w-12 h-12 flex items-center justify-center hover:bg-cyan-400 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 10l9-6 9 6M4 10v10a1 1 0 001 1h14a1 1 0 001-1V10" />
               </svg>
             </button>
           </form>
-          <div className="flex items-center space-x-4 mb-4">
-            <img src="/trust-plot-placeholder.png" alt="Trust Plot" className="w-6 h-6" />
-            <span className="text-gray-700 text-sm">Trust Plot</span>
-            <img src="/google-partner-placeholder.png" alt="Google Partner" className="w-6 h-6 ml-4" />
-            <span className="text-gray-700 text-sm">Google Partner</span>
-          </div>
-          <div className="mt-4">
-            <img src="/clutch-logo-placeholder.png" alt="Clutch" className="w-32 h-10 object-contain" />
-            <div className="text-gray-700 text-sm mt-1 flex items-center">
-              4.9/5.0
-              <span className="ml-2 text-yellow-400 flex">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <svg key={i} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z" /></svg>
-                ))}
-              </span>
-            </div>
-          </div>
+          
+         
         </div>
 
         {/* Quick Links */}
@@ -85,7 +70,7 @@ const Footer = () => {
           <div
             className="absolute inset-0 z-0"
             style={{
-              background: "linear-gradient(180deg, #283A64 0%, #86D8EB 100%)",
+              background: "linear-gradient(180deg, #a9b2c3 0%, #c8ebf4 100%)",
               backgroundColor: 'transparent'
             }}
           />

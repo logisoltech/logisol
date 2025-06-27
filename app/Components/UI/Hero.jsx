@@ -4,6 +4,7 @@ import { font } from '../Font/font'
 import Particles from "react-tsparticles"
 import { loadSlim } from "tsparticles-slim"
 import { particlesConfig } from '../Data/particlesConfig'
+import { headingFont } from '../Font/headingFont'
 
 const Hero = () => {
   const particlesInit = useCallback(async engine => {
@@ -15,7 +16,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className={`${font.className} relative h-[35rem] bg-white overflow-hidden`}>
+    <section className={`${font.className} relative h-[44rem] bg-white overflow-hidden`}>
       {/* Particles.js Background */}
       <Particles
         id="tsparticles"
@@ -30,10 +31,11 @@ const Hero = () => {
           {/* Left Content */}
           <div className="text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#283a64] leading-tight">
-                Logic<br />
-                Innovation<br />
-                Solutions
+              <h1 className={`${headingFont.className} text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#283a64] leading-tight`}>
+                <span className='text-cyan-400'>Log</span>ic<br />
+                <span className='text-cyan-400'>I</span>nnovation<br />
+                <span className='text-cyan-400'>Sol</span>utions<br />
+                
               </h1>
               <p className="text-lg md:text-xl text-gray-600 max-w-md">
                 Turning Logic into Innovative Solutions
@@ -42,8 +44,8 @@ const Hero = () => {
             
             {/* CTA Button */}
             <div className="flex items-center space-x-4">
-              <button className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-4 rounded-lg transition-colors duration-200 font-medium text-lg flex items-center space-x-2">
-                <span>Get Started</span>
+              <button className="bg-gradient-to-r from-[#283A64] via-sky-800 to-cyan-600 text-white px-8 py-2 rounded-full transition-colors duration-200 font-medium text-lg flex items-center space-x-2">
+                <span>Let's Discuss</span>
               </button>
               <div className="w-12 h-12 custom-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-200 cursor-pointer">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
