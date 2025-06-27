@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`${font.className} custom-gray p-6 sticky top-0 z-50 bg-white shadow-sm`}>
+    <nav className={`${font.className} p-6 sticky top-0 z-50 bg-white shadow-sm`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
