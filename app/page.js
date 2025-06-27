@@ -2,7 +2,6 @@ import Blog from "./Components/UI/Blog";
 import Footer from "./Components/UI/Footer";
 import Hero from "./Components/UI/Hero";
 import Navbar from "./Components/UI/Navbar";
-import Footer from "./Components/UI/Footer";
 import AboutUs from "./Components/UI/AboutUs";
 import Facts from "./Components/UI/Facts";
 import Work from "./Components/UI/Work";
