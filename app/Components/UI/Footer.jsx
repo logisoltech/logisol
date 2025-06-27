@@ -4,7 +4,7 @@ import { font } from '../Font/font'
 
 const Footer = () => {
   return (
-    <footer className={`${font.className} bg-white pt-12 pb-4 px-4 border-t border-gray-200`}> 
+    <footer className={`${font.className} bg-white pt-12 z-50 relative pb-4 px-4 border-t border-gray-200`}> 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Left Section */}
         <div className="col-span-1 flex flex-col justify-start">
@@ -80,11 +80,20 @@ const Footer = () => {
 
       {/* Contact & Social Section */}
       <div className="max-w-7xl mx-auto mt-12">
-        <div className="rounded-2xl bg-gradient-to-r from-gray-400 to-cyan-200 flex flex-col md:flex-row items-center justify-between px-8 py-8">
-          <div className="flex items-center mb-4 md:mb-0">
+        <div className="relative rounded-2xl overflow-hidden flex flex-col md:flex-row items-center justify-between px-8 py-8">
+          {/* Gradient background layer */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              background: "linear-gradient(180deg, #283A64 0%, #86D8EB 100%)",
+              backgroundColor: 'transparent'
+            }}
+          />
+          {/* Content */}
+          <div className="relative z-10 flex items-center mb-4 md:mb-0">
             <img src="/logisol-logo-nav.png" alt="Logisol Logo" className="w-40 h-14 object-contain" />
           </div>
-          <div className="flex flex-col md:flex-row items-center md:space-x-8">
+          <div className="relative z-10 flex flex-col md:flex-row items-center md:space-x-8">
             <div className="flex items-center text-lg font-semibold text-gray-800 mb-2 md:mb-0">
               <svg className="w-6 h-6 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5.75C3 4.784 3.784 4 4.75 4h14.5A1.75 1.75 0 0121 5.75v12.5A1.75 1.75 0 0119.25 20H4.75A1.75 1.75 0 013 18.25V5.75z" /></svg>
               (626)-671-6483
