@@ -1,0 +1,88 @@
+"use client";
+
+import React from 'react'
+import { FaReact, FaInstagram, FaFacebook, FaBootstrap, FaFigma, FaWordpress, FaTiktok } from 'react-icons/fa'
+import { RiNextjsFill } from 'react-icons/ri'
+import { SiShopify, SiFlutter } from 'react-icons/si'
+import { font } from '../Font/font'
+
+const Silder = () => {
+  const technologies = [
+    { name: 'React', icon: FaReact },
+    { name: 'Next.js', icon: RiNextjsFill },
+    { name: 'TikTok', icon: FaTiktok },
+    { name: 'Shopify', icon: SiShopify },
+    { name: 'WordPress', icon: FaWordpress },
+    { name: 'Instagram', icon: FaInstagram },
+    { name: 'Facebook', icon: FaFacebook },
+    { name: 'Bootstrap', icon: FaBootstrap },
+    { name: 'Figma', icon: FaFigma },
+    { name: 'Flutter', icon: SiFlutter }
+  ]
+
+  return (
+    <div className={`bg-[#283A64] py-6 overflow-hidden relative z-20 ${font.className}`}>
+      <div className="slider-container">
+        <div className="slider-track">
+          {/* First set of icons */}
+          {technologies.map((tech, index) => {
+            const IconComponent = tech.icon
+            return (
+                                           <div key={`first-${index}`} className="flex items-center gap-3 px-6 py-3 mx-4 whitespace-nowrap">
+                <IconComponent 
+                  className="text-5xl text-white" 
+                />
+                <span className="text-white font-medium text-xl">
+                  {tech.name}
+                </span>
+              </div>
+            )
+          })}
+          
+          {/* Duplicate set for continuous loop */}
+          {technologies.map((tech, index) => {
+            const IconComponent = tech.icon
+            return (
+                                           <div key={`second-${index}`} className="flex items-center gap-3 px-6 py-3 mx-4 whitespace-nowrap">
+                <IconComponent 
+                  className="text-5xl text-white" 
+                />
+                <span className="text-white font-medium text-xl">
+                  {tech.name}
+                </span>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+
+      <style jsx>{`
+        .slider-container {
+          width: 100%;
+          overflow: hidden;
+        }
+        
+        .slider-track {
+          display: flex;
+          animation: slide 30s linear infinite;
+          width: fit-content;
+        }
+        
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .slider-track:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+    </div>
+  )
+}
+
+export default Silder
