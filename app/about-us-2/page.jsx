@@ -2,7 +2,6 @@
 import React, { useCallback } from "react";
 import Navbar from "../Components/UI/Navbar";
 import Footer from "../Components/UI/Footer";
-import AboutUs from "../Components/UI/AboutUs";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { particlesConfig } from "../Components/Data/particlesConfig";

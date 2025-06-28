@@ -5,7 +5,7 @@
     },
     {
         "label": "About Us",
-        "href": "/about"
+        "href": "/about-us-2"
     },
     {
         "label": "Services",
@@ -59,6 +59,6 @@
     },
     {
         "label": "Contact",
-        "href": "/contact"
+        "href": "/contact-us"
     }
 ]
