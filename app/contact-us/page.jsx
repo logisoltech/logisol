@@ -8,14 +8,6 @@ import { particlesConfig } from "../Components/Data/particlesConfig";
 import { font } from "../Components/Font/font";
 import { headingFont } from "../Components/Font/headingFont";
 import Slider from "../Components/UI/Slider";
-import {
-  FaArrowRight,
-  FaLightbulb,
-  FaStar,
-  FaTrophy,
-  FaUserFriends,
-  FaUsers,
-} from "react-icons/fa";
 
 export default function ContactUsPage() {
   const particlesInit = useCallback(async (engine) => {

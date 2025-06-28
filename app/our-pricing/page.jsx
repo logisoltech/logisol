@@ -8,14 +8,6 @@ import { particlesConfig } from "../Components/Data/particlesConfig";
 import { font } from "../Components/Font/font";
 import { headingFont } from "../Components/Font/headingFont";
 import Slider from "../Components/UI/Slider";
-import {
-  FaArrowRight,
-  FaLightbulb,
-  FaStar,
-  FaTrophy,
-  FaUserFriends,
-  FaUsers,
-} from "react-icons/fa";
 
 export default function OurPricingPage() {
   const particlesInit = useCallback(async (engine) => {
@@ -23,87 +15,6 @@ export default function OurPricingPage() {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {}, []);
-
-  // Track hovered column: 0=email, 1=phone, 2=location
-  const [activeIdx, setActiveIdx] = useState(0);
-  const columns = [
-    {
-      icon: (
-        <svg
-          className="w-16 h-16 text-white"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-        >
-          <rect
-            width="20"
-            height="14"
-            x="2"
-            y="5"
-            rx="2"
-            stroke="currentColor"
-          />
-          <path d="M22 7l-10 6L2 7" stroke="currentColor" />
-        </svg>
-      ),
-      content: (
-        <a
-          href="mailto:info@logisol.tech"
-          className="text-2xl md:text-2xl font-bold underline text-white hover:text-cyan-400 transition text-center"
-        >
-          info@logisol.tech
-        </a>
-      ),
-    },
-    {
-      icon: (
-        <svg
-          className="w-16 h-16 text-white"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z"
-            stroke="currentColor"
-          />
-        </svg>
-      ),
-      content: (
-        <a
-          href="tel:(626)-671-6483"
-          className="text-2xl md:text-2xl font-bold underline text-white hover:text-cyan-400 transition text-center"
-        >
-          (626)-671-6483
-        </a>
-      ),
-    },
-    {
-      icon: (
-        <svg
-          className="w-16 h-16 text-white"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
-            stroke="currentColor"
-          />
-        </svg>
-      ),
-      content: (
-        <div className="text-2xl md:text-2xl font-bold underline text-white text-center">
-          1001 S Main St Kalispell,
-          <br />
-          Montana, 59901, USA
-        </div>
-      ),
-    },
-  ];
 
   return (
     <div className={font.className}>
