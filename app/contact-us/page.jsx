@@ -127,9 +127,9 @@ export default function ContactUsPage() {
           <div className="flex items-center justify-center mt-2">
             <a
               href="/"
-              className="text-lg font-semibold text-cyan-400 hover:underline flex items-center gap-2"
-            >
-              Home <span className="text-cyan-400 text-2xl">*</span> Contact Us
+              className="text-lg font-semibold text-[#283A64] hover:underline flex items-center gap-2"
+            > 
+              Home <span className="text-cyan-400"><span className="text-2xl">*</span> Contact Us</span> 
             </a>
           </div>
         </div>
