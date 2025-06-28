@@ -3,7 +3,7 @@ import Hero from "./Components/UI/Hero";
 import Navbar from "./Components/UI/Navbar";
 import Pricing from "./Components/UI/Pricing";
 import Services from "./Components/UI/Services";
-import Silder from "./Components/UI/Silder";
+import Slider from "./Components/UI/Slider";
 import Solution from "./Components/UI/Solution";
 import WhyChooseUs from "./Components/UI/WhyChooseUs";
 import Footer from "./Components/UI/Footer";
@@ -19,7 +19,7 @@ export default function Home() {
     <div>
       <Navbar/>
       <Hero/>
-      <Silder/>
+      <Slider/>
       <AboutUs/>
       <Services/>
       <Facts/>
