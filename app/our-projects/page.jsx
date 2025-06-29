@@ -10,15 +10,11 @@ import { headingFont } from "../Components/Font/headingFont";
 import Slider from "../Components/UI/Slider";
 import {
   FaArrowRight,
-  FaLightbulb,
-  FaStar,
-  FaTrophy,
-  FaUserFriends,
-  FaUsers,
   FaArrowLeft,
 } from "react-icons/fa";
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Collaborate from "../Components/UI/Collaborate";
 
 export default function OurProjectsPage() {
   const particlesInit = useCallback(async (engine) => {
@@ -93,7 +89,7 @@ export default function OurProjectsPage() {
         <Slider />
 
         {/* --- Animated Project Gallery --- */}
-        <section className="bg-white relative z-20 w-full max-w-7xl mx-auto py-16 px-4">
+        <section className="bg-white relative z-20 w-full mx-auto py-16 px-24">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {images.map((img) => (
               <motion.div
@@ -117,6 +113,7 @@ export default function OurProjectsPage() {
           </div>
         </section>
 
+        <Collaborate />
         <Footer />
       </div>
       {/* Modal with AnimatePresence */}
