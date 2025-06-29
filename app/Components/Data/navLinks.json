@@ -4,8 +4,8 @@
         "href": "/"
     },
     {
-        "label": "About",
-        "href": "/about"
+        "label": "About Us",
+        "href": "/about-us-2"
     },
     {
         "label": "Services",
@@ -16,12 +16,8 @@
                 "href": "/services/web-development"
             },
             {
-                "label": "App Development", 
-                "href": "/services/app-development"
-            },
-            {
-                "label": "Web Design",
-                "href": "/services/web-design"
+                "label": "Mobile Development", 
+                "href": "/services/mobile-development"
             },
             {
                 "label": "SEO",
@@ -33,7 +29,7 @@
             },
             {
                 "label": "Graphic Design",
-                "href": "/services/graphic-design"
+                "href": "/services/graphics-designing-services"
             },
             {
                 "label": "Video Editing",
@@ -47,7 +43,7 @@
     },
     {
         "label": "Projects",
-        "href": "/projects"
+        "href": "/our-projects"
     },
     {
         "label": "Blog",
@@ -55,10 +51,10 @@
     },
     {
         "label": "Our Pricing",
-        "href": "/pricing"
+        "href": "/our-pricing"
     },
     {
         "label": "Contact",
-        "href": "/contact"
+        "href": "/contact-us"
     }
 ]
