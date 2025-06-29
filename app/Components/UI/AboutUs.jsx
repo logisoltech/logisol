@@ -4,7 +4,7 @@ import { font } from '../Font/font'
 
 const AboutUs = () => {
   return (
-    <section className={`${font.className} relative max-w-7xl mx-auto px-4 py-24 z-10`}>
+    <section className={`${font.className} bg-white relative z-20 w-full mx-auto px-4 py-24`}>
       <div className="flex flex-col md:flex-row gap-10 items-start relative z-10">
         {/* Left: Image */}
         <div className="flex-1 flex flex-col items-center md:items-start w-full">

@@ -6,7 +6,7 @@ import { RiNextjsFill } from 'react-icons/ri'
 import { SiShopify, SiFlutter } from 'react-icons/si'
 import { font } from '../Font/font'
 
-const Silder = () => {
+const Slider = () => {
   const technologies = [
     { name: 'React', icon: FaReact },
     { name: 'Next.js', icon: RiNextjsFill },
@@ -85,4 +85,4 @@ const Silder = () => {
   )
 }
 
-export default Silder
+export default Slider

@@ -28,6 +28,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
+    <div className='w-full mx-auto bg-white relative z-20'>
     <section className={`${font.className} relative z-20 max-w-7xl mx-auto px-4 py-16`}>
       <span className="uppercase tracking-widest text-xs text-gray-500 mb-2 flex items-center gap-2">
         <span className="text-cyan-400 text-lg">*</span> Testimonials
@@ -71,6 +72,7 @@ const Testimonials = () => {
         ))}
       </div>
     </section>
+    </div>
   )
 }
 
