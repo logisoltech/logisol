@@ -25,7 +25,7 @@ const Collaborate = () => {
         </div>
         <h1 className="text-[#18345A] font-extrabold text-[8rem] max-sm:text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[8rem] leading-none text-center select-none mt-4">
           TOGETHER
-        </h1>
+        </h1>6r
       </div>
     </section>
   )
