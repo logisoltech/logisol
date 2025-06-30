@@ -32,17 +32,3 @@ body {
 .custom-blue {
   background-color: #283a64;
 }
-
-@keyframes gradient-flow {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
-
-.animate-gradient-flow {
-  background-size: 100% 200%;
-  animation: gradient-flow 2s ease-in-out forwards;
-}
